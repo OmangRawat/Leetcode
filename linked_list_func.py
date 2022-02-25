@@ -18,3 +18,12 @@ def to_linked_list(in_list):
             ln.next = ListNode(in_list[i])
             ln = ln.next
     return head
+
+
+def print_list(head):
+    ans = "start -> "
+    while head:
+        ans += f"{head.val} -> "
+        head = head.next
+    ans += "end"
+    print(ans)
