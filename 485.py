@@ -18,7 +18,7 @@ class Solution:
             else:
                 counter += 1
         ans = max(ans, counter)
-        
+
         return ans
 
 
