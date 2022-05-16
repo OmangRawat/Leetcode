@@ -14,7 +14,7 @@ class Solution:
             if num - 1 not in nums:
                 curr = num
                 while curr in nums:
-                    ans = max(ans, curr- num + 1)
+                    ans = max(ans, curr - num + 1)
                     curr = curr + 1
         return ans
 
