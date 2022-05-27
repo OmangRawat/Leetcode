@@ -22,3 +22,10 @@ class Solution:
 in_nums = [0, 3, 7, 2, 5, 8, 4, 6, 0, 1]
 a = Solution()
 print(a.longestConsecutive(in_nums))
+
+
+"""
+
+For every number that doesn't have a number smaller than it find how many numbers are there in continuation with it
+
+"""

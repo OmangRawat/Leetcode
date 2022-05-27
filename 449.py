@@ -34,7 +34,7 @@ class Codec:
         return decode(-1 * math.inf, math.inf)
 
 
-in_array = [1, 2, 3, 4, 5, 6]
+in_array = [2, 1, 3, None, None, None, 4]
 in_root = to_binary_tree(in_array)
 pretty_print(in_root)
 a = Codec()
@@ -47,6 +47,6 @@ pretty_print(a.deserialize(serialized))
 
 For serialize put the tree in pre-order or post-order and append in a string
 For deserialize just traverse the string in whichever order it has been serialized in
+It works without condition for None as we have a BST and we are using rrange to set things at right places
 Reference- https://leetcode.com/problems/serialize-and-deserialize-bst/discuss/93171/Python-O(-N-)-solution.-easy-to-understand
-
 """

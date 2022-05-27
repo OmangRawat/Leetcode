@@ -45,7 +45,7 @@ print(a.pathSum(in_root, in_target))
 """
 
 Check for every node as the start point if the target sum can be achieved, by decreasing the node value of the current 
-node and finding nodes that will add up to the remaning sem in its subtree
+node and finding nodes that will add up to the remaining sum in its subtree
 Reference - https://leetcode.com/problems/path-sum-iii/discuss/141424/Python-step-by-step-walk-through.-Easy-to-understand.-Two-solutions-comparison.-%3A-)
 
 Complexities:

@@ -11,15 +11,15 @@ class Solution:
         def dfs(curr_nums):
             if len(current) >= 2 and current not in ans:
                 ans.append(current.copy())
-            visited = set()
+            # visited = set()
             for i in range(len(curr_nums)):
                 num = curr_nums[i]
                 if current and num < current[-1]:
                     continue
-                if num not in visited:
-                    current.append(num)
-                    dfs(curr_nums[i + 1:])
-                    current.pop()
+                # if num not in visited:
+                current.append(num)
+                dfs(curr_nums[i + 1:])
+                current.pop()
 
         ans = []
         current = []

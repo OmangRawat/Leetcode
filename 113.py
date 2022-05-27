@@ -14,10 +14,12 @@ class Solution:
                 return
 
             target = target - curr_root.value
+            print("Before", curr_path)
             if not curr_root.left and not curr_root.right and target == 0:
                 curr_path.append(curr_root.value)
                 ans.append(curr_path)
-
+            print("After", curr_path)
+            print("After --> ", curr_path + [curr_root.value])
             dfs(target, curr_root.left, curr_path + [curr_root.value])
             dfs(target, curr_root.right, curr_path + [curr_root.value])
 

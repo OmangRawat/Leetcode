@@ -15,12 +15,13 @@ class Solution:
             left, right = lca(curr_node.left), lca(curr_node.right)
             return curr_node if left and right else left or right
 
-        # root = lca(root)
+        root = lca(root)
         pretty_print(root)
         ps = pd = ""
         stack = [(root, "")]
         while stack:
             node, path = stack.pop()
+            # print(node.value, path)
             if node.value == startValue:
                 ps = path
             if node.value == destValue:
@@ -34,7 +35,7 @@ class Solution:
 
 in_array = [5, 1, 2, 3, None, 6, 4]
 in_startValue = 3
-in_destValue = 6
+in_destValue = 2
 in_root = to_binary_tree(in_array)
 pretty_print(in_root)
 a = Solution()

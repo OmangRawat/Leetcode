@@ -32,6 +32,7 @@ class Solution:
                 prefix_sum_y[i][j] += matrix[i][j] + (prefix_sum_y[i][j - 1] if j - 1 >= 0 else 0)
 
         ans = 0
+        print(prefix_sum_y)
         for y1 in range(n):
             for y2 in range(y1, n):
 
@@ -42,7 +43,7 @@ class Solution:
 
                 temp_ans = count_sub_array_target(rows)
                 ans += temp_ans
-
+                print(prefix_sum_y)
         return ans
 
 
@@ -50,3 +51,10 @@ in_matrix = [[0, 1, 0], [1, 1, 1], [0, 1, 0]]
 in_target = 0
 a = Solution()
 print(a.numSubmatrixSumTarget(in_matrix, in_target))
+
+
+"""
+
+
+
+"""

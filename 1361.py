@@ -30,7 +30,7 @@ class Solution:
             cur = queue.popleft()
 
             if cur in visited:      # Should not have any cycles
-                return False        # Each node should have one one parent
+                return False        # Each node should have only one parent
 
             visited.add(cur)
 
