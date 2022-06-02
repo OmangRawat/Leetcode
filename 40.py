@@ -31,3 +31,10 @@ in_candidates = [10, 1, 2, 7, 6, 1, 5]
 in_target = 8
 a = Solution()
 print(a.combinationSum2(in_candidates, in_target))
+
+
+"""
+
+Sort can always be used to tackle duplicate answers or re-occurring numbers
+
+"""
