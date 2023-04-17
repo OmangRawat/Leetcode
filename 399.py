@@ -40,6 +40,7 @@ class Solution:
             if n1 in d:
                 seen = set()
                 value = get_value(n1, n2)
+                print(seen)
             if value:
                 ans.append(value)
             else:
@@ -91,9 +92,14 @@ print(a.calcEquation_sol2(in_equations, in_values, in_queries))
 """
 
 Approach 1:
+Make a dict of dict storing n1/n2 values using the equations
+Now get the desired values by recursion
+If the value is not already stored then divide n1/n2 into n1/num * num/n2 for nums in dict of n1
 Reference - https://leetcode.com/problems/evaluate-division/discuss/1642378/Python-DFS-99.62-Simple
 
 Approach 2:
+Make a dict of dict storing equation values 
+Use equations to get all the values that can be extracted from them
 Reference - https://leetcode.com/problems/evaluate-division/discuss/1635330/Python-double-dict-union-find
 
 """

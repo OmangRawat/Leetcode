@@ -29,6 +29,8 @@ class Solution:
             for k in final_can_detonate:
                 for v in final_can_detonate[k]:
                     can_detonate[k].update(can_detonate[v] - {k})
+            print("Final", final_can_detonate)
+            print(can_detonate)
 
         return (max(len(can_detonate[k]) for k in can_detonate) if can_detonate else 0) + 1
 

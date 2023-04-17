@@ -13,6 +13,7 @@ class Solution:
         heap = []
 
         for (c, f, t) in trips:
+            print(heap)
             while heap and heap[0][0] <= f:
                 v = heappop(heap)[1]
                 capacity += v
@@ -43,7 +44,7 @@ in_trips = [[2, 1, 5], [3, 3, 7]]
 in_capacity = 5
 a = Solution()
 print(a.carPooling(in_trips, in_capacity))
-print(a.carPooling_sol2(in_trips, in_capacity))
+# print(a.carPooling_sol2(in_trips, in_capacity))
 
 
 """
