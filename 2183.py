@@ -11,6 +11,7 @@ from math import gcd
 class Solution:
     def countPairs(self, nums, k):
         counter = Counter(gcd(x, k) for x in nums)
+        print(counter)
         ans = 0
         for i in counter:
             for j in counter:
